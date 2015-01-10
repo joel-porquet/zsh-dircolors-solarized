@@ -5,7 +5,7 @@ zsh.
 
 ## Installation
 
-I recommand using [antigen](https://github.com/zsh-users/antigen). Then you just
+I recommend using [antigen](https://github.com/zsh-users/antigen). Then you just
 add the following line in your `.zshrc`:
 
     antigen bundle joel-porquet/zsh-dircolors-solarized.git
