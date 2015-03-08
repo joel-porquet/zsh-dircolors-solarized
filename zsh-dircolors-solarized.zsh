@@ -1,5 +1,6 @@
 # get the directory from when we're sourced
 _ZSH_DIRCOLORS_SOLARIZED_DIR=${ZSH_DIRCOLORS_SOLARIZED_DIR:-${${0:A}:h}/dircolors-solarized}
+_CONFIG_FILE=$HOME/.zsh-dircolors.config
 
 function lssolarized ()
 {
@@ -21,3 +22,18 @@ function setupsolarized ()
         echo "Could not load theme $_SOLARIZED_THEME_PATH"
     fi
 }
+
+function savesolarized ()
+{
+    local _SOLARIZED_THEME="dircolors.ansi-universal"
+    [[ $# -eq 1 ]] && _SOLARIZED_THEME=$1
+
+    setupsolarized $_SOLARIZED_THEME
+
+    # Save the settings to a file
+    setopt CLOBBER
+    echo $_SOLARIZED_THEME > $_CONFIG_FILE
+    unsetopt CLOBBER
+}
+
+[[ -e $_CONFIG_FILE ]] && setupsolarized $(cat $_CONFIG_FILE)

@@ -1,0 +1,2 @@
+#compdef savesolarized
+_arguments "1: :($(lssolarized | tr "\n" " "))"
