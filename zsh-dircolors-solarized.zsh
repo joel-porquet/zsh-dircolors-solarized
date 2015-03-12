@@ -21,14 +21,6 @@ function setupsolarized ()
     else
         echo "Could not load theme $_SOLARIZED_THEME_PATH"
     fi
-}
-
-function savesolarized ()
-{
-    local _SOLARIZED_THEME="dircolors.ansi-universal"
-    [[ $# -eq 1 ]] && _SOLARIZED_THEME=$1
-
-    setupsolarized $_SOLARIZED_THEME
 
     # Save the settings to a file
     setopt CLOBBER
