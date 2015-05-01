@@ -1,0 +1,1 @@
+zsh-dircolors-solarized.zsh
