@@ -5,8 +5,10 @@ zsh.
 
 ## Installation
 
-I recommend using [antigen](https://github.com/zsh-users/antigen). Then you just
-add the following line in your `.zshrc`:
+I recommend using [antigen](https://github.com/zsh-users/antigen), but it is
+also compatible with other plugin managers.
+
+Add the following line in your `.zshrc`:
 
     antigen bundle joel-porquet/zsh-dircolors-solarized.git
 
@@ -21,11 +23,7 @@ This plugin offers two commands:
  * `dircolors.ansi-light` (optimized version of universal for light background)
  * `dircolors.256dark` (degraded solarized dark theme)
 
-* `setupsolarized` which installs a theme. By default, without any argument, it
-  will install `dircolors.ansi-universal`.
+* `setupsolarized` which installs a theme and saves the current configuration to
+  the file `$HOME/.zsh-dircolors.config`. Without any argument, `setupsolarized`
+  will use `dircolors.ansi-universal`.
 
-To automatically load a theme (for example the `ansi-light` version) when your
-terminal starts, add the following line to your `.zshrc` (after loading the
-plugin of course):
-
-    setupsolarized dircolors.ansi-light
