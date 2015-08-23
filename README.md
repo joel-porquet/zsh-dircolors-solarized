@@ -12,7 +12,6 @@ Add the following line in your `.zshrc`:
 
     antigen bundle joel-porquet/zsh-dircolors-solarized.git
 
-
 ## Usage
 
 This plugin offers two commands:
@@ -26,4 +25,3 @@ This plugin offers two commands:
 * `setupsolarized` which installs a theme and saves the current configuration to
   the file `$HOME/.zsh-dircolors.config`. Without any argument, `setupsolarized`
   will use `dircolors.ansi-universal`.
-
