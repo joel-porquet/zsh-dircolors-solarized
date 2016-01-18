@@ -23,5 +23,5 @@ This plugin offers two commands:
  * `dircolors.256dark` (degraded solarized dark theme)
 
 * `setupsolarized` which installs a theme and saves the current configuration to
-  the file `$HOME/.zsh-dircolors.config`. Without any argument, `setupsolarized`
-  will use `dircolors.ansi-universal`.
+  the configuration file (`$HOME/.zsh-dircolors.config` by default). Without any
+  argument, `setupsolarized` will use the theme `dircolors.ansi-universal`.
