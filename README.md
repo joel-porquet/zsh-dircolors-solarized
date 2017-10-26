@@ -12,7 +12,7 @@ Note that after installing this plugin, the terminal must be restarted or a new 
 1. Clone this repository somewhere on your computer. For example:
 
     ```sh
-    git clone https://github.com/joel-porquet/zsh-dircolors-solarized ~/.zsh/zsh-dircolors-solarized
+    git clone --recursive https://github.com/joel-porquet/zsh-dircolors-solarized ~/.zsh/zsh-dircolors-solarized
     ```
 
 2. Add the following snippet to your `.zshrc`:
@@ -37,7 +37,7 @@ also compatible with other plugin managers.
 1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
     ```sh
-    git clone git://github.com/joel-porquet/zsh-dircolors-solarized $ZSH_CUSTOM/plugins/zsh-dircolors-solarized
+    git clone --recursive git://github.com/joel-porquet/zsh-dircolors-solarized $ZSH_CUSTOM/plugins/zsh-dircolors-solarized
     ```
 
 2. Add the plugin to the list of plugins for Oh My Zsh to load:
