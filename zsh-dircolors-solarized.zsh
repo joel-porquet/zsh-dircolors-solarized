@@ -25,9 +25,7 @@ function setupsolarized ()
     fi
 
     # Save the settings to a file
-    setopt CLOBBER
-    echo $_SOLARIZED_THEME > $_ZSH_DIRCOLORS_SOLARIZED_CONF
-    unsetopt CLOBBER
+    echo $_SOLARIZED_THEME >! $_ZSH_DIRCOLORS_SOLARIZED_CONF
 }
 
 [[ -e $_ZSH_DIRCOLORS_SOLARIZED_CONF ]] && setupsolarized $(cat $_ZSH_DIRCOLORS_SOLARIZED_CONF)
