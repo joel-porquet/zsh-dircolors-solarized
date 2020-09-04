@@ -61,3 +61,16 @@ This plugin offers two commands:
   argument, `setupsolarized` will use the theme `dircolors.ansi-universal`.
   
 `setupsolarized` must be run at least once in order to create the configuration file. After doing so, the plugin will automatically load your configuration each time a zsh session is started.
+
+## OSX Support
+A required command for this library is `dircolors`. This command is not available on OSX. Instead, `gdircolors`
+is provided through Homebrew.
+
+1. Install core-utils.
+    ```
+    brew install coreutils
+    ```
+2. Add the following alias to your `.zshrc` anywhere prior to where this plugin is installed.
+    ```
+    alias dircolors='gdircolors'
+    ```
