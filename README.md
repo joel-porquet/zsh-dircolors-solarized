@@ -7,6 +7,19 @@ zsh.
 
 Note that after installing this plugin, the terminal must be restarted or a new terminal session must be created.
 
+### OSX Support
+A required command for this library is `dircolors`. This command is not available on OSX. Instead, `gdircolors`
+is provided through Homebrew.
+
+1. Install core-utils.
+    ```
+    brew install coreutils
+    ```
+2. Add the following alias to your `.zshrc` anywhere prior to where this plugin is installed.
+    ```
+    alias dircolors='gdircolors'
+    ```
+
 ### Manual
 
 1. Clone this repository somewhere on your computer. For example:
